@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlawg30cmcjnk"]
+
+[ext_resource type="Texture2D" uid="uid://brx0lmqujo6wh" path="res://Game Screen Textures/PC.png" id="1_5826x"]
+
+[node name="Quiz" type="Node2D"]
+texture_repeat = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_5826x")

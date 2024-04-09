@@ -1,0 +1,56 @@
+[gd_scene load_steps=9 format=3 uid="uid://dy8rvliuxfilc"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_0ivf0"]
+[ext_resource type="Texture2D" uid="uid://kmi8tpq0wqr0" path="res://Button Textures/Start.png" id="1_uho5x"]
+[ext_resource type="Texture2D" uid="uid://bjgc0ap5pwb7m" path="res://Button Textures/StartClicked.png" id="2_8avvr"]
+[ext_resource type="Texture2D" uid="uid://brx0lmqujo6wh" path="res://Game Screen Textures/PC.png" id="2_u4mev"]
+[ext_resource type="Texture2D" uid="uid://c73bwprr33xp6" path="res://Button Textures/Load.png" id="3_wjnfx"]
+[ext_resource type="Texture2D" uid="uid://b7bcubusws6x8" path="res://Button Textures/LoadClicked.png" id="4_b437q"]
+[ext_resource type="Texture2D" uid="uid://bf7q8nxtg6f02" path="res://Button Textures/Quit.png" id="5_2me33"]
+[ext_resource type="Texture2D" uid="uid://c7odneu6yyc3g" path="res://Button Textures/QuitClicked.png" id="6_u634j"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_0ivf0")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 3.0
+offset_top = 8.0
+offset_right = 1849.0
+offset_bottom = 1167.0
+texture = ExtResource("2_u4mev")
+metadata/_edit_use_anchors_ = true
+
+[node name="Start" type="TextureButton" parent="."]
+offset_left = 671.0
+offset_top = 572.0
+offset_right = 800.0
+offset_bottom = 636.0
+size_flags_horizontal = 4
+tooltip_text = "Start from scratch!"
+texture_normal = ExtResource("1_uho5x")
+texture_pressed = ExtResource("2_8avvr")
+metadata/_edit_use_anchors_ = true
+
+[node name="Load" type="TextureButton" parent="."]
+offset_left = 672.0
+offset_top = 667.0
+offset_right = 801.0
+offset_bottom = 731.0
+size_flags_horizontal = 4
+tooltip_text = "Load game from a save."
+texture_normal = ExtResource("3_wjnfx")
+texture_pressed = ExtResource("4_b437q")
+metadata/_edit_use_anchors_ = true
+
+[node name="Quit" type="TextureButton" parent="."]
+offset_left = 670.0
+offset_top = 763.0
+offset_right = 799.0
+offset_bottom = 827.0
+size_flags_horizontal = 4
+tooltip_text = "Quit to your OS."
+texture_normal = ExtResource("5_2me33")
+texture_pressed = ExtResource("6_u634j")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
