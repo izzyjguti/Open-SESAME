@@ -1,0 +1,29 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://cjm7euikya7xy"]
+
+[ext_resource type="FontFile" uid="uid://b6sm75a30um2n" path="res://Fonts/W95FA.otf" id="1_shwly"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_henxa"]
+bg_color = Color(0.545098, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_htb7i"]
+bg_color = Color(0.823529, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kmp06"]
+bg_color = Color(0.698039, 0.690196, 0.658824, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.839216, 0.839216, 0.839216, 1)
+border_blend = true
+corner_detail = 10
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 5.0
+
+[resource]
+default_font = ExtResource("1_shwly")
+Button/styles/hover = SubResource("StyleBoxFlat_henxa")
+Button/styles/normal = SubResource("StyleBoxFlat_htb7i")
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_kmp06")
