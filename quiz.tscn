@@ -1,11 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://dlawg30cmcjnk"]
+[gd_scene load_steps=11 format=3 uid="uid://dlawg30cmcjnk"]
 
 [ext_resource type="Texture2D" uid="uid://brx0lmqujo6wh" path="res://Game Screen Textures/PC.png" id="1_5826x"]
 [ext_resource type="Script" path="res://quiz.gd" id="1_ug43l"]
 [ext_resource type="Theme" uid="uid://5xp7u7pxrsif" path="res://Button Textures/handwritten.tres" id="2_asfmb"]
 [ext_resource type="Theme" uid="uid://cjm7euikya7xy" path="res://PC Windows.tres" id="4_rqgbc"]
 [ext_resource type="LabelSettings" uid="uid://cbwhg5t5iktxy" path="res://PC LABELS.tres" id="5_7le83"]
-[ext_resource type="ButtonGroup" uid="uid://bccak2am6elfq" path="res://answer buttons.tres" id="6_qgx58"]
 [ext_resource type="Texture2D" uid="uid://c3ki28d3jcaw0" path="res://Button Textures/Submit.png" id="7_begla"]
 [ext_resource type="Texture2D" uid="uid://c47yht5s1xjgr" path="res://Button Textures/SubmitClicked.png" id="8_e6p1w"]
 [ext_resource type="Texture2D" uid="uid://c2cvo5u37bqa2" path="res://Button Textures/Previous.png" id="9_fpuvd"]
@@ -94,67 +93,24 @@ offset_top = -240.0
 offset_right = 611.0
 offset_bottom = 36.0
 
-[node name="A1" type="Panel" parent="TextureRect/QuizWindow/QuestionCore"]
-layout_mode = 0
-offset_left = 5.0
-offset_top = 48.0
-offset_right = 633.0
-offset_bottom = 88.0
-
-[node name="CheckBox" type="CheckBox" parent="TextureRect/QuizWindow/QuestionCore/A1"]
-layout_mode = 0
-offset_left = 11.0
-offset_top = 14.0
-offset_right = 27.0
-offset_bottom = 30.0
-button_group = ExtResource("6_qgx58")
-
-[node name="A2" type="Panel" parent="TextureRect/QuizWindow/QuestionCore"]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.024
-offset_left = 5.0
-offset_top = 89.0
-offset_right = 619.544
-offset_bottom = 129.0
-
-[node name="CheckBox2" type="CheckBox" parent="TextureRect/QuizWindow/QuestionCore/A2"]
+[node name="Answers" type="ItemList" parent="TextureRect/QuizWindow/QuestionCore"]
 layout_mode = 0
 offset_left = 10.0
-offset_top = 14.0
-offset_right = 26.0
-offset_bottom = 30.0
-button_group = ExtResource("6_qgx58")
+offset_top = 43.0
+offset_right = 616.0
+offset_bottom = 213.0
+theme = ExtResource("4_rqgbc")
+theme_override_font_sizes/font_size = 26
+item_count = 4
+item_0/text = "A1"
+item_1/text = "A2"
+item_2/text = "A3"
+item_3/text = "A4"
 
-[node name="A3" type="Panel" parent="TextureRect/QuizWindow/QuestionCore"]
+[node name="RestartButton" type="Button" parent="TextureRect/QuizWindow/QuestionCore"]
 layout_mode = 0
-offset_left = 5.0
-offset_top = 129.0
-offset_right = 635.0
-offset_bottom = 169.0
-
-[node name="CheckBox3" type="CheckBox" parent="TextureRect/QuizWindow/QuestionCore/A3"]
-layout_mode = 0
-offset_left = 9.0
-offset_top = 14.0
-offset_right = 25.0
-offset_bottom = 30.0
-button_group = ExtResource("6_qgx58")
-
-[node name="A4" type="Panel" parent="TextureRect/QuizWindow/QuestionCore"]
-layout_mode = 0
-offset_left = 5.0
-offset_top = 171.0
-offset_right = 635.0
-offset_bottom = 211.0
-
-[node name="CheckBox4" type="CheckBox" parent="TextureRect/QuizWindow/QuestionCore/A4"]
-layout_mode = 0
-offset_left = 10.0
-offset_top = 15.0
-offset_right = 26.0
-offset_bottom = 31.0
-button_group = ExtResource("6_qgx58")
+offset_right = 40.0
+offset_bottom = 40.0
 
 [node name="Submission" type="Panel" parent="TextureRect/QuizWindow"]
 layout_mode = 2
