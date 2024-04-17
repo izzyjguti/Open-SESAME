@@ -2,24 +2,23 @@ extends Node2D
 
 @onready var DisplayText = $TextureRect/QuizWindow/QuestionCore/Question
 @onready var ListItem = $TextureRect/QuizWindow/QuestionCore/Answers
-@onready var RestartButton = $TextureRect/QuizWindow/QuestionCore/RestartButton
+@onready var RestartButton = $TextureRect/QuizWindow/QuestionCore/RetryButton
 
 var items : Array = []
 var item : Dictionary
 var index_item : int = 0
-
 var correct : float = 0
 
 func _on_sticky_note_pressed():
 	#should cycle through messages for fun
-	$TextureRect/StickyNote.text = "yeehaw"
+	$TextureRect/StickyNote.text = "Reminder: \nmeeting at 6\n-Marcus"
 	
 func _on_quit_button_pressed():
 	#add save game warning
 	get_tree().quit()
 
 func _ready():
-	var json_data = read_json_file("gfx/Questions.json")
+	var json_data = read_json_file("Questions.json")
 	if json_data and json_data is Array:
 		items = json_data
 		refresh_scene()
@@ -39,9 +38,10 @@ func show_question():
 	ListItem.clear()
 	item = items[index_item]
 	DisplayText.text = item.question
-	var options = item.options
+	var options = item.answers
 	for option in options:
-		ListItem.add_item(option)
+		ListItem.add_item(option,load("res://Button Textures/radio.png"))
+	
 
 func show_result():
 	ListItem.hide()
@@ -56,28 +56,35 @@ func show_result():
 
 
 func read_json_file(filename):
-	var text = FileAccess.get_file_as_string(filename)
-	var json = JSON.new()
-	var json_data = json.parse(text)
-	print(json_data)
+	var filetext = FileAccess.get_file_as_string(filename)
+	var json_data = JSON.parse_string(filetext)
+	#print(json_data)
 	return json_data
 
-func _on_item_list_item_selected(index):
-	if index == item.correctOptionIndex:
+func _on_retry_pressed():
+	correct = 0
+	index_item = 0
+	refresh_scene()
+
+func _on_submit_pressed():
+	var index = ListItem.get_selected_items();
+	#print(index)
+	#print(item.correctOptionIndex)
+	if index.is_empty():
+		return
+	if index[0] == item.correctOptionIndex:
 		correct += 1
 	index_item += 1
 	refresh_scene()
 
 
-func _on_button_pressed():
-	correct = 0
-	index_item = 0
-	refresh_scene()
-
-
-
-
-
-func _on_submit_pressed():
-	if(true):
-		print("yay")
+func _on_answers_item_selected(index):
+	print(index)
+	for i in range(1,5):
+		#print(i)
+		if i == index:
+			ListItem.set_item_icon(index,load("res://Button Textures/radio selected.png"))
+		else:
+			ListItem.set_item_icon(index,load("res://Button Textures/radio.png"))
+	
+	pass # Replace with function body.

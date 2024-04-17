@@ -1,0 +1,51 @@
+[
+
+	{
+		"question": "What is social engineering?",
+		"answers": ["The overloading of a website with too many requests", "The use of psychological manipulation to trick someone into giving up sensitive information", "The use of multiple pieces of evidence to verify someone's identity", "A field of engineering that examines social and cultural trends in technology"],
+		"correctOptionIndex": 1
+	},
+	
+	{
+		"question": "What is Scareware?",
+		"answers": ["A type of virus that jumpscares the user","A software for creating monster designs","Software intended to scare the user into making rash decisions","Software that scares away any malicious attacks"],
+		"correctOptionIndex": 2
+	},
+	
+	{
+		"question": "Which of the following is an example of a Quid Pro Quo attack?",
+		"answers": ["An email stating that the recipient has won a raffle and must enter their information to redeem it","A call stating that a Nigerian prince needs help to get back home","A call from the FBI stating that the recipient has committed federal crimes","An email from the bank stating that the recipient needs to update their credit card information"],
+		"correctOptionIndex": 0
+	},
+	
+	{
+		"question": "How many pieces of evidence are needed to satisfy a Multi-Factor Authentication prompt?",
+		"answers": ["Only one","Only two","More than two","At least 2"],
+		"correctOptionIndex": 3
+	},
+	
+	{
+		"question": "Which of these is NOT something that could occur as a direct result of social engineering?",
+		"answers": ["Ransomware","Identity Theft","Job Promotion","Data leaks"],
+		"correctOptionIndex": 2
+	},
+	
+	{
+		"question": "What is voice phishing?",
+		"answers": ["Using an AI-generated voice to pretend to be someone else", "Phishing through a phone call", "Phishing with emotionally-charged language", "The use of voice-related problems like laryngitis in pretexting"],
+		"correctOptionIndex": 1
+	},
+	
+	{
+		"question": "What is NOT a method of tailgating?",
+		"answers": ["Threatening to arrest someone unless they give their SSN", "Following a worker into a company building", "Using a person's laptop or private account while they're logged in", "Using someone's Netflix account while it's logged into a TV"],
+		"correctOptionIndex": 0
+	},
+	
+	{
+		"question": "Why is a Watering Hole Attack named as such?",
+		"answers": ["It was inspired by African hunting patterns", "It poisons a function that is as essential to the program as water", "It is similar to the Nigerian Prince Attack and uses the same context", "It affects every person who comes into contact with the affected organization"],
+		"correctOptionIndex": 3
+	}
+
+]
