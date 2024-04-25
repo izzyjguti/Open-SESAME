@@ -1,0 +1,66 @@
+[
+
+	{
+		"name": "Gabriella",
+		"message": "Good morning! I'm calling today on behalf of the St. Jude Children's Hospital. We're having a special donation event at the moment, every dollar donated gives you entries in a raffle where you can pick the name for one of our five therapy puppies who will be living at the hospital and bringing smiles to patients' faces for years to come. If you can find it in your heart to give some charity funds for sick children in need that would be greatly appreciated.",
+		"replies": ["Sure, I'd love to donate!","I'll donate on the official website, but thank you for calling.","(Report as spam)"],
+		"correctOptionIndex": 2,
+		"consequences": ["Thank you very much! I'll need you to follow these instructions, they seem a little weird but that's because our current system is down. You'll need to log into your bank account, uh-huh, and then open up the Google Play Store...", "Well the thing is, this raffle event is limited to callers only so you won't be able to enter the raffle unless you do it this way. If you're really sure though, then have a nice day. Goodbye!", "..."]
+	},
+	
+	{
+		"name": "Brandon",
+		"message": "Congratulations! You've won our Lucky Numbers competition and your prize is the grand total of $100,000! To redeem your prize, though, you will have to get the process started to pay your taxes.",
+		"replies": ["No problem, how do I file them?","Why do I need to pay taxes for something I've already won?","(Report as spam)"],
+		"correctOptionIndex": 2,
+		"consequences": ["You'll need to go to this website and type in your credentials form the competition... you didn't make an account? That's fine, I can make one for you. What would you like as your username and password?", "It's government policy, all lottery gains have to have taxes collected... no, we cannot take the taxes out before giving the money to you... the IRS website doesn't have a form for this kind of prize, it has to be done through our personal portal... ugh, you're so aggravating!", "..."]
+	},
+	
+	{
+		"name": "Deborah",
+		"message": "Good afternoon, I'm calling from Bank of America. We noticed a problem with your billing, and would like to help you correct the issue. To begin, please enter the last four digits of your social security number.",
+		"replies": ["Oh my goodness! Here you go!","You're not gonna believe this, it's actually 6969.","(Report as spam)"],
+		"correctOptionIndex": 2,
+		"consequences":["As you can see, your account is displaying a big fat ZERO! There's no money in your account, because someone stole it all away! HAHAHAHAHA","Wow. You really hate me huh. Why not just hang up instead of making such a pathetic joke?","..."]
+	},
+	
+	{
+		"name": "Luis",
+		"message": "Hello! Your medical appointment is currently on schedule, but we may have to postpone the appointment because your healthcare insurance hasn't been confirmed. To begin, please submit your provider name and number.",
+		"replies": ["I'm covered by Medicare!","When's the appointment, and with which doctor?","(Report as spam)"],
+		"correctOptionIndex": 2,
+		"consequences": ["That's great to know, thank you! Do you have a secondary insurance provider, in case this one fails again?","This is for the appointment next month, with Dr. Smith. Oh, you don't go to a Dr. Smith? That's because he's subbing in for your regular doctor. What kind of doctor? Uh, a general one...","..."]
+	},
+	
+	{
+		"name": "Ted",
+		"message": "Hey! Sorry to bother you, I know I missed our daily lunch chat today. It's because I lost my ID and can't get in the building. Could you please do me a favor and let me in. I'm near the south entrance where the elevators are.",
+		"replies": ["Yeah, no problem!","Where's your ID?","(Report as spam)"],
+		"correctOptionIndex": 0,
+		"consequences": ["Thank you so much! I'll talk to the IT people and get a replacement as soon as I'm inside.","I don't know, man. If I knew, it wouldn't be a problem for me to get in! I'm your friend, why are you interrogating me like this?","..."]
+	},
+	
+	{
+		"name": "Isabel",
+		"message": "Hey there! You're the new employee, right? I was asked by my supervisor to get you checked into our security system, so I'm gonna have to verify your ID. Could you please log into your employee portal with two-factor authentication to see if everything's working alright?",
+		"replies": ["Sure thing IT person!","What supervisor asked you to do that?","(Report as spam)"],
+		"correctOptionIndex": 0,
+		"consequences": ["No problem. See you around!","Marcus asked me to do it. He just wants to make sure you can log in with no problems, I'm here to fix things in case you can't.","..."]
+	},
+	
+	{
+		"name": "Bethany",
+		"message": "Hi there, is this the call center? I'm having trouble accessing my account and I don't know what to do. There's no rush or anything, it's just that my MFA is being weird because I got a new phone number. Please ignore the background sounds, my baby's been crying for an hour and it's driving me nuts!",
+		"replies": ["I'm sorry to hear that! I'm still in training, but I could help you out.","You've got the wrong number, I'll reroute you to the call center now.","(Report as spam)"],
+		"correctOptionIndex": 1,
+		"consequences": ["Thank you, but I don't think it's a good idea to get help from a rookie.","Thank you so much! I really appreciate it.","..."]
+	},
+	
+	{
+		"name": "Marcus",
+		"message": "Hey there! Just checking in on you. I hope the training's going well. I need you to confirm your employee ID so I can pay you. There are two people here with the same name, so I want to make sure I'm compensating the right employee for this newbie training time.",
+		"replies": ["You got it, boss!","How do I know it's you?","(Report as spam)"],
+		"correctOptionIndex": 0,
+		"consequences": ["Oh, and if you haven't gotten acquainted with Ted and Isabel, you should! They're great people.","I literally just brought you into the training cubicle. I left a sticky note for you and everything!","..."]
+	}
+]

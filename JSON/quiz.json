@@ -1,0 +1,143 @@
+[
+
+	{
+		"question": "What is social engineering?",
+		"answers": ["The overloading of a website with too many requests", "The use of psychological manipulation to trick someone into giving up sensitive information", "The use of multiple pieces of evidence to verify someone's identity", "A field of engineering that examines social and cultural trends in technology"],
+		"correctOptionIndex": 1,
+		"correction": "Social engineering uses made-up scenarios to trick people into revealing personal information."
+	},
+	
+	{
+		"question": "What is Scareware?",
+		"answers": ["A type of virus that jumpscares the user","A software for creating monster designs","Software intended to scare the user into making rash decisions","Software that scares away any malicious attacks"],
+		"correctOptionIndex": 2,
+		"correction": "Scareware will often take the form of a scary notification, such as messages from authority figures claiming the user has committed a grave mistake."
+	},
+	
+	{
+		"question": "Which of the following is an example of a Quid Pro Quo attack?",
+		"answers": ["An email stating that the recipient has won a raffle and must enter their information to redeem it","A call stating that a Nigerian prince needs help to get back home","A call from the FBI stating that the recipient has committed federal crimes","An email from the bank stating that the recipient needs to update their credit card information"],
+		"correctOptionIndex": 0,
+		"correction": "Quid Pro Quo can mean a reciprocal exchange or something given in compensation. A quid pro quo attack takes advantage of a trade deal or free reward to trick someone into giving up information. The other options take advantage of the user's helpfulness, fear, or concern to convince them to do something; the correct option is the only one that invites the user to collect something."
+	},
+	
+	{
+		"question": "How many pieces of evidence are needed to satisfy a Multi-Factor Authentication prompt?",
+		"answers": ["Only one","Only two","More than two","At least 2"],
+		"correctOptionIndex": 3,
+		"correction": "Multi means more than one, so an MFA prompt cannot have only one piece of evidence. The other options are incorrect because they are not limited to specific numbers like two or three. Any amount of evidence that is not just one can be considered Multi-Factor Authentication."
+	},
+	
+	{
+		"question": "Which of these is NOT something that could occur as a direct result of social engineering?",
+		"answers": ["Ransomware","Identity Theft","Job Promotion","Data leaks"],
+		"correctOptionIndex": 2,
+		"correction": "Social engineering can not only harm you and the company you work for, it can also damage your reputation. No one wants to be known as the guy who single-handedly caused a massive data leak. Therefore, being the victim of a social engineering scam will not lead to you being promoted."
+	},
+	
+	{
+		"question": "What is voice phishing?",
+		"answers": ["Using an AI-generated voice to pretend to be someone else", "Phishing through a phone call", "Phishing with emotionally-charged language", "The use of voice-related problems like laryngitis in pretexting"],
+		"correctOptionIndex": 1, 
+		"correction": "Voice phishing has gotten popular on the internet, thanks to the famous Microsoft support technician scam. Vishing uses a call from someone to make you think the message is more credible than it really is."
+	},
+	
+	{
+		"question": "What is NOT a method of tailgating?",
+		"answers": ["Threatening to arrest someone unless they give their SSN", "Following a worker into a company building", "Using a person's laptop or private account while they're logged in", "Using someone's Netflix account while it's logged into a TV"],
+		"correctOptionIndex": 0,
+		"correction": "When driving, tailgating means to drive very close to someone from behind. Tailgating in social engineering is quite similar. Threatening someone makes them aware of your intentions. It is not sneaky, nor does it go unnoticed. Forcing someone to give you their password is not the same as using someone's laptop or following them into a building."
+	},
+	
+	{
+		"question": "Why is a Watering Hole Attack named as such?",
+		"answers": ["It was inspired by African hunting patterns", "It poisons a function that is as essential to the program as water", "It is similar to the Nigerian Prince Attack and uses the same context", "It affects every person who comes into contact with the affected organization"],
+		"correctOptionIndex": 3, 
+		"correction": "A Watering Hole Attack is made to corrupt or infiltrate a real website, and is called that because it affects everyone who uses or works for the system. Anyone who comes into contact with the organization's website is at risk."
+	},
+	
+	{
+		"question": "Which member of a company would NOT be a likely target of spear phishing?",
+		"answers": ["The CEO","A janitor","A payroll secretary","An IT specialist"],
+		"correctOptionIndex": 1,
+		"correction": "Spear phishing will most often target someone who has either high administration permissions or access to sensitive information. The CEO would likely have their plans for the company stored on a personal device. The secretary has access to the personal information of every employee whose wage is calculated. The IT specialist is granted access to the company's security protections, such as firewalls, and will often bypass these measures as part of the job. The only person who would not have access to sensitive information is the janitor." 
+	},
+	
+	{
+		"question": "Why is it a bad idea to use a found USB on your computer?",
+		"answers": ["The USB could contain malware","You could override someone else's information","You might see the personal information of someone you know","The USB might not work at all"],
+		"correctOptionIndex": 0,
+		"correction": "A USB that is left out in public is a type of baiting tactic, and could contain anything from device-scanning malware to evidence of illegal activites. No matter who the USB belonged to in the past, if you are found in possession of a tained USB then you will be held liable. It's always better not to take such a risk, ever."
+	},
+	
+	{
+		"question": "How can you tell that a company's social media account is real and not angler phishing?",
+		"answers": ["The company has a verified symbol","The company's profie picture is of their logo","The company is constantly posting different content including memes, links, and givewaways","The company's bio contains correct contact and location details"],
+		"correctOptionIndex": 3,
+		"correction": "Although there's no way to be 100% sure that someone is angler phishing, the best way is to compare the company's behavior and identity. If what they post is related to the company's values, their follower count is an accurate number, and there is a real way to contact them in their bio, then the account is likely that of a real company. The verification checkmark is no longer credible on certain websites, as people can buy one to seem legitimate. Similarly, anyone can snap a picture of a company's logo and use it as a profile picture. A tell-tale sign of angler phishing is the attempt to reach as many people as possible by posting malware-infected links, giving out way too many free prizes, and posting about things that have nothing to do with the company like memes or political topics."
+	},
+	
+	{
+		"question": "When a company has a lot of employees, its attack surface is ",
+		"answers": ["Large","Small","Nonexistent","Only dependent on security, not size"],
+		"correctOptionIndex": 0,
+		"correction": "Although the level of security a company uses is great for reducing attack surface, more people means more weak links in the chain. In the case of social engineering, where one person is all it takes to infiltrate a company, amount of employees is very important. The more employees there are, the larger the attack surface is."
+	},
+	
+	{
+		"question": "What is pretexting?",
+		"answers": ["Doing research on the victim before attempting a scam","Phishing via text message","Making up a fake scenario for the victim to believe","Writing out the script for a social engineering scam"],
+		"correctOptionIndex": 2,
+		"correction": "Pretexting is the use of a scenario to make a social engineering attempt more believable. A scammer is more likely to be given a password if they say they forgot it or need it as part of an FBI investigation, as oppposed to just asking for it with no reasoning."
+	},
+	
+	{
+		"question": "When looking for a website on Google, which link should you open?",
+		"answers": ["The first link that pops up","Any link that is labeled as a sponsored ad","A link that does not have https in front","A link from a reputable source"],
+		"correctOptionIndex": 3,
+		"correction": "Scammers will often pay search engines like Google to put their malware-infected sites up high on search bar results. The best links to click on will always be from official websites that are not sponsored. These websites are popular by their own merit, and are less likely to be dangerous."
+	},
+	
+	{
+		"question": "If a social engineering scammer were to contact you, what information would likely NOT be requested?",
+		"answers": ["Your username and password","Your toxic red flags","Your Social Security number","Your credit card number"],
+		"correctOptionIndex": 1,
+		"correction": "A scammer will want to know any of your sensitive codes, numbers, or names. This can include login credentials, government-issued numbers, or money-related codes. Although scammers can also ask for your favorite color or date of birth as supplementary guesses for these things, a scammer will likely not ask for your toxic traits or red flags."
+	},
+	
+	{
+		"question": "What kind of social engineering defense is this software?",
+		"answers": ["Security awareness training","Access control policies","Cybersecurity technologies","Dumb luck"],
+		"correctOptionIndex": 0,
+		"correction": "This software was made to quiz you about your understanding of social engineering and teach you how to be safe from it. Therefore, this software is considered a type of security awareness training."
+	},
+	
+	{
+		"question": "A social engineering scammer will probably NOT pretend to be",
+		"answers": ["A family member or friend of yours","A police officer or government agent","An employee of a trusted company","An animatronic from your favorite pizza restaurant"],
+		"correctOptionIndex": 3,
+		"correction": "Although the idea of your favorite actor or singer would definitely entice you to give up some valuable information, people can guess that it would be impossible for a fictional character to ask for your SSN. Therefore, scammers tend to veer away from pretending to be a ficitonal character unless communicating with a small child who can get into their parent's wallet." 
+	},
+	
+	{
+		"question": "What should you do if you are the target of SMS phishing?",
+		"answers": ["Click any links in the text message","Reply to the message with STOP","Report the message to your phone carrier","Send the message to your friends"],
+		"correctOptionIndex": 2,
+		"correction": "If you click a link in the text message, your device may be infected with malware. Responding to the message tells the scammer that you are a real person, not a bot, and then you will be sent more messages. Sending the message to your friends, even as a joke or to make fun of it, may increase their risks of being compromised. Always report it to your mobile phone carrier and then delete the message."
+	},
+	
+	{
+		"question": "To make your computer stronger against cyber attacks, what should you do?",
+		"answers": ["Turn off your firewall","Keep your OS updated","Remove your spam filters", "Avoid downloading antivirus software"],
+		"correctOptionIndex": 1,
+		"correction": "Every feature that your computer provides for your safety should be used to its full potential. Keep the firewalls and spam filters on! OS updates are also important because they provide fixes to bugs in previous versions that can be taken advantage of. It also doesn't hurt to install additional antivirus on top of the default that comes with your computer, so long as you get it from a reputable source."
+	},
+	
+	{
+		"question": "A bulk fishing email will likely be tailored to look like it came from",
+		"answers": ["Your bank","Your family","Your coworker","Your local grocery store"],
+		"correctOptionIndex": 0,
+		"correction": "Bulk fishing emails are intended to reach as wide an audience as possible, so they will pose as figures with a large following, such as an organization or social media. Your family will not tell you to update your passwords, and a coworker will likely send messages to the people in a group project, not millions of employees. The local grocery store may send a newsletter with deals to a wide audience, but not a request to update or give information. A bank, however, is more believable in the sense that they may have records to update for many people." 
+	}
+
+]

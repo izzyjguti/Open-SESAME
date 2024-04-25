@@ -1,0 +1,128 @@
+[
+
+	{
+		"title": "Access Control Policy",
+		"definitions": ["Measures put in place to limit who can access sensitive information", "May include policies such as Multi-Factor Authentication and a Zero Trust security model"]
+	},
+
+	{
+		"title": "Angler Phishing",
+		"definitions": ["Using fake social media accounts to represent a real company's customer service or support team"]
+	},
+	
+	{
+		"title": "Attack Surface",
+		"definitions": ["The sum of vulnerabilities, pathways, or methods a hacker can use to carry out a cyberattack", "The larger and less secure an organization is, the larger an attack surface it has"]
+	},
+
+	{
+		"title": "Baiting",
+		"definitions": ["A method that lures someone into giving up sensitive information by tempting them with a valuable offer or item", "The Nigerian Prince scam is one of the most popular baiting examples"]
+	},
+
+	{
+		"title": "Baiting Tactics", 
+		"definitions": ["Free (but malware-infected) game, music, or software downloads", "Malware-infected USB drives left in public spaces", "Offers to trade riches for information"]
+	},
+
+	{
+		"title": "Bulk Phishing Emails",
+		"definitions": ["Emails that are sent to millions of recipients at a time", "They appear to be sent by a large and well known business or organization", "Will often make a generic request such as updating information", "May include a malicious link to a fake website that captures data"]
+	},
+	
+	{
+		"title": "Cybersecurity Technologies", 
+		"definitions": ["Spam filters and secure email gateways", "Firewalls and antivirus software", "Keeping operating systems updated", "Endpoint Detection and Response (EDR)", "Extended Detection and Response (XDR)"]
+	},
+	
+	{
+		"title": "Endpoint Detection and Response (EDR)", 
+		"definitions": ["Software that uses real-time analytics and AI to check for cyberthreats and minimize damage dealt from them", "Takes information from every endpoint (computer, server, mobile device) on the network"]
+	},
+	
+	{
+		"title": "Extended Detection and Response (XDR)",
+		"definitions": ["A rapidly-evolving software similar to EDR that integrates different security solutions and locations to unify security across a company's different layers"]
+	},
+
+	{
+		"title": "Multi-Factor Authentication (MFA)", 
+		"definitions": ["A method of identity verification in which the user must provide at least two pieces of evidence, such as a password and a temporary passcode", "Many styles of MFA rely on accessing multiple devices, which relies on the low probability that a hacker has control of more than one device"]
+	},
+
+	{
+		"title": "Phishing",
+		"definitions": ["Digital or voice messages made to look or sound like a trusted, credible organization or individual", "The most popular type of social engineering attack, used in 41% of all incidents"]
+	},
+	
+	{
+		"title": "Pretexting",
+		"definitions": ["The creation of a fake problem that the scammer pretends they can fix", "Usually occurs in the context of tech support for a security breach", "Almost every social engineering attack uses some form of pretexting"]
+	},
+	
+	{
+		"title": "Quid Pro Quo",
+		"definitions": ["Dangling a false reward in front of the user in exchange for information", "Popular Quid Pro Quo scams include fake contest winnings or loyalty rewards"]
+	},
+	
+	{
+		"title": "Scareware",
+		"definitions": ["Software intended to scare the user into a social engineering scam", "Can take the form of a law enforcement notice", "May appear as a warning that one's device is compromised"]
+	},
+
+	{
+		"title": "Search Engine Phishing",
+		"definitions": ["The creation of a malicious website that ranks high in search results for popular terms"]
+	},
+
+	{
+		"title": "SMS Phishing",
+		"definitions": ["Phishing via text message", "Also known as smishing"]
+	},
+
+	{
+		"title": "Social Engineering",
+		"definitions": ["A digital attack that uses psychological manipulation to trick a person into compromising their security", "Also known as human hacking"]
+	},
+	
+	{
+		"title": "Social Engineering Attack Tactics",
+		"definitions": ["Posing as a trusted brand", "Posing as a government agency", "Posing as an authority figure", "Inducing fear", "Inducing a sense of urgency", "Appealing to greed", "Appealing to helpfulness", "Appealing to curiosity"]
+	},
+	
+	{
+		"title": "Social Engineering Consequences",
+		"definitions": ["Identity Theft", "Ransomware", "Leaks and breaches"]
+	},
+	
+	{
+		"title": "Social Engineering Defenses", 
+		"definitions": ["Security Awareness Training", "Access control policies", "Cybersecurity technologies"]
+	},
+	
+	{
+		"title": "Social Engineering Targets",
+		"definitions": ["Login credentials", "Credit card or bank account numbers", "Social Security numbers"]
+	},
+	
+	{
+		"title": "Spear Phishing",
+		"definitions": ["Targets a specific person with privileged access to targeted resources", "Uses prior research, usually from social media sites, to create a scenario familiar to the target", "Also known as Whale Phishing when the target is a high-profile person (like a CEO)"]
+	},
+	
+	{
+		"title": "Tailgating", 
+		"definitions": ["The act of closely following an authorized person into an unauthorized space", "Can occur in real life or in a digital setting", "Popular methods include walking into a company buliding behind an employee or using a computer that's still logges into a private account", "Also called piggybacking"]	
+	},
+	
+	{
+		"title": "Voice Phishing",
+		"definitions": ["Phishing that is conducted through phone calls", "Also known as vishing", "Can triple the success of a campaign" ]
+	},
+	
+	{
+		"title": "Watering Hole Attack", 
+		"definitions": ["The injection of malicious code into a legitimate website", "Affects anyone who frequents the corrupted site"]
+	}
+
+]

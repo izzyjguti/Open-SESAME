@@ -1,0 +1,201 @@
+[gd_scene load_steps=11 format=3 uid="uid://b28f1xnq5beed"]
+
+[ext_resource type="Texture2D" uid="uid://tj3iesi24ua" path="res://Game Screen Textures/Phone.png" id="1_3juqr"]
+[ext_resource type="Script" path="res://phone.gd" id="1_d1uk2"]
+[ext_resource type="Theme" uid="uid://cjm7euikya7xy" path="res://PC Windows.tres" id="4_ixwb7"]
+[ext_resource type="LabelSettings" uid="uid://cbwhg5t5iktxy" path="res://PC LABELS.tres" id="6_x7f5w"]
+[ext_resource type="Texture2D" uid="uid://c3ki28d3jcaw0" path="res://Button Textures/Submit.png" id="7_1csaw"]
+[ext_resource type="Texture2D" uid="uid://c47yht5s1xjgr" path="res://Button Textures/SubmitClicked.png" id="8_pis0q"]
+[ext_resource type="Texture2D" uid="uid://bbuvamw5ok8yi" path="res://Button Textures/reference.png" id="11_608xe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_maq2n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xtgc4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6tl7k"]
+
+[node name="Phone" type="Node2D"]
+texture_repeat = 1
+script = ExtResource("1_d1uk2")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1846.0
+offset_bottom = 1159.0
+texture = ExtResource("1_3juqr")
+
+[node name="QuizWindow" type="PanelContainer" parent="TextureRect"]
+layout_mode = 0
+offset_left = 353.0
+offset_top = 12.0
+offset_right = 1003.0
+offset_bottom = 664.0
+scale = Vector2(1.7153, 1.7153)
+theme_override_styles/panel = SubResource("StyleBoxEmpty_maq2n")
+
+[node name="CallInstructions" type="Label" parent="TextureRect/QuizWindow"]
+layout_mode = 2
+size_flags_vertical = 0
+theme = ExtResource("4_ixwb7")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "
+
+You've receieved a phone call! There's someone on the other line:"
+
+[node name="QuestionCore" type="Panel" parent="TextureRect/QuizWindow"]
+layout_mode = 2
+size_flags_vertical = 4
+size_flags_stretch_ratio = 6.03
+
+[node name="TextureRect" type="ColorRect" parent="TextureRect/QuizWindow/QuestionCore"]
+layout_mode = 0
+offset_left = -16.0
+offset_top = -140.0
+offset_right = 677.0
+offset_bottom = 236.0
+color = Color(0.976471, 0.976471, 0.976471, 0.901961)
+
+[node name="QuestionText" type="RichTextLabel" parent="TextureRect/QuizWindow/QuestionCore"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = -238.0
+offset_right = 624.0
+offset_bottom = -19.0
+theme = ExtResource("4_ixwb7")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 20
+text = "Call Log Text"
+autowrap_mode = 2
+
+[node name="Answers" type="ItemList" parent="TextureRect/QuizWindow/QuestionCore"]
+layout_mode = 0
+offset_left = 19.8216
+offset_top = 26.1249
+offset_right = 623.822
+offset_bottom = 313.125
+theme = ExtResource("4_ixwb7")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0.764706, 0, 0, 1)
+theme_override_constants/v_separation = 23
+theme_override_font_sizes/font_size = 20
+theme_override_styles/panel = SubResource("StyleBoxEmpty_xtgc4")
+allow_search = false
+max_text_lines = 3
+auto_height = true
+text_overrun_behavior = 4
+item_count = 4
+fixed_column_width = 1160
+icon_scale = 0.15
+item_0/text = "A1"
+item_1/text = "A2"
+item_2/text = "A3"
+item_3/text = "A4"
+
+[node name="CallOptionInstructions" type="Label" parent="TextureRect/QuizWindow"]
+layout_mode = 2
+size_flags_vertical = 0
+theme = ExtResource("4_ixwb7")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pick a fitting response!"
+
+[node name="Submission" type="Panel" parent="TextureRect/QuizWindow"]
+layout_mode = 2
+size_flags_vertical = 8
+size_flags_stretch_ratio = 2.49
+
+[node name="Submit" type="TextureButton" parent="TextureRect/QuizWindow/Submission"]
+layout_mode = 0
+offset_left = 543.0
+offset_top = -31.0
+offset_right = 734.0
+offset_bottom = 33.0
+scale = Vector2(0.477504, 0.477504)
+texture_normal = ExtResource("7_1csaw")
+texture_pressed = ExtResource("8_pis0q")
+
+[node name="ResponseWindow" type="PanelContainer" parent="TextureRect"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -325.0
+offset_top = -326.0
+offset_right = 325.0
+offset_bottom = 326.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_6tl7k")
+
+[node name="ResponseHeader" type="Panel" parent="TextureRect/ResponseWindow"]
+custom_minimum_size = Vector2(0, 41.24)
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="ResponseName" type="Label" parent="TextureRect/ResponseWindow/ResponseHeader"]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 4.0
+offset_right = 132.0
+offset_bottom = 28.0
+text = "Scenario Result"
+label_settings = ExtResource("6_x7f5w")
+vertical_alignment = 1
+
+[node name="ResponseCore" type="Panel" parent="TextureRect/ResponseWindow"]
+layout_mode = 2
+size_flags_vertical = 4
+size_flags_stretch_ratio = 6.03
+
+[node name="ResponseFeedback" type="RichTextLabel" parent="TextureRect/ResponseWindow/ResponseCore"]
+layout_mode = 0
+offset_left = 47.0
+offset_top = -129.0
+offset_right = 650.0
+offset_bottom = 147.0
+scale = Vector2(0.81599, 0.787228)
+theme = ExtResource("4_ixwb7")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 40
+text = "Scenario Feedback"
+autowrap_mode = 2
+
+[node name="Confirm" type="Button" parent="TextureRect/ResponseWindow/ResponseCore"]
+layout_mode = 0
+offset_left = 255.0
+offset_top = 191.5
+offset_right = 383.0
+offset_bottom = 236.5
+theme_override_font_sizes/font_size = 27
+text = "Continue"
+
+[node name="ReferenceButton" type="TextureButton" parent="."]
+offset_left = 1589.0
+offset_top = 572.0
+offset_right = 1907.0
+offset_bottom = 1477.0
+rotation = -0.218929
+scale = Vector2(0.513778, 0.513778)
+texture_normal = ExtResource("11_608xe")
+
+[connection signal="pressed" from="TextureRect/QuizWindow/Submission/Submit" to="." method="_on_submit_pressed"]
+[connection signal="pressed" from="TextureRect/ResponseWindow/ResponseCore/Confirm" to="." method="_on_confirm_pressed"]
+[connection signal="pressed" from="ReferenceButton" to="." method="_on_reference_button_pressed"]

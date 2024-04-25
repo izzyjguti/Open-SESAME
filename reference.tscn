@@ -1,3 +1,158 @@
-[gd_scene format=3 uid="uid://x7futqy124q2"]
+[gd_scene load_steps=5 format=3 uid="uid://x7futqy124q2"]
+
+[ext_resource type="Script" path="res://reference.gd" id="1_a1p5c"]
+[ext_resource type="Texture2D" uid="uid://brx0lmqujo6wh" path="res://Game Screen Textures/PC.png" id="1_kevde"]
+[ext_resource type="FontFile" uid="uid://cgs4kbjc2d5di" path="res://Fonts/timesbd.ttf" id="2_shkqi"]
+[ext_resource type="FontFile" uid="uid://2p2kwxc06wml" path="res://Fonts/times.ttf" id="3_pq1k2"]
 
 [node name="Reference" type="Node2D"]
+script = ExtResource("1_a1p5c")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_right = 1846.0
+offset_bottom = 1159.0
+texture = ExtResource("1_kevde")
+metadata/_edit_lock_ = true
+
+[node name="GrayOut" type="ColorRect" parent="TextureRect2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.983749
+anchor_bottom = 0.96635
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.239216, 0.239216, 0.239216, 0.580392)
+metadata/_edit_use_anchors_ = true
+
+[node name="Return" type="Button" parent="TextureRect2"]
+layout_mode = 0
+offset_left = 1656.0
+offset_top = 1032.0
+offset_right = 1792.0
+offset_bottom = 1104.0
+theme_override_fonts/font = ExtResource("3_pq1k2")
+theme_override_font_sizes/font_size = 36
+text = "Return"
+
+[node name="BookBack" type="ColorRect" parent="TextureRect2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0872156
+anchor_top = 0.120794
+anchor_right = 0.871073
+anchor_bottom = 0.937015
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.301961, 0.466667, 0.0784314, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Shadow" type="ColorRect" parent="TextureRect2/BookBack"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.561324
+anchor_top = 0.173532
+anchor_right = 0.604364
+anchor_bottom = 1.00923
+offset_left = -129.69
+offset_top = -119.103
+offset_right = -89.6896
+offset_bottom = -79.1027
+color = Color(0.356863, 0.333333, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="PageLeft" type="ColorRect" parent="TextureRect2/BookBack"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.121513
+anchor_top = 0.181646
+anchor_right = 0.568049
+anchor_bottom = 0.998076
+offset_left = -129.69
+offset_top = -119.103
+offset_right = -89.6896
+offset_bottom = -79.1027
+color = Color(1, 0.992157, 0.843137, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="HeadingL" type="Label" parent="TextureRect2/BookBack/PageLeft"]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 48.0
+offset_right = 636.0
+offset_bottom = 168.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_shkqi")
+theme_override_font_sizes/font_size = 46
+text = "Head"
+autowrap_mode = 2
+
+[node name="BodyL" type="Label" parent="TextureRect2/BookBack/PageLeft"]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 216.0
+offset_right = 636.0
+offset_bottom = 784.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pq1k2")
+theme_override_font_sizes/font_size = 34
+text = "Body"
+autowrap_mode = 2
+
+[node name="FlipBack" type="Button" parent="TextureRect2/BookBack/PageLeft"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 808.0
+offset_right = 65.0
+offset_bottom = 839.0
+text = "Back
+"
+
+[node name="PageRight" type="ColorRect" parent="TextureRect2/BookBack"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.598312
+anchor_top = 0.181646
+anchor_right = 1.03409
+anchor_bottom = 0.998076
+offset_left = -129.69
+offset_top = -119.103
+offset_right = -89.6896
+offset_bottom = -79.1027
+color = Color(1, 0.992157, 0.843137, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="HeadingR" type="Label" parent="TextureRect2/BookBack/PageRight"]
+layout_mode = 0
+offset_left = 55.0001
+offset_top = 40.0
+offset_right = 623.0
+offset_bottom = 160.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_shkqi")
+theme_override_font_sizes/font_size = 46
+text = "Head"
+autowrap_mode = 2
+
+[node name="BodyR" type="Label" parent="TextureRect2/BookBack/PageRight"]
+layout_mode = 0
+offset_left = 55.0001
+offset_top = 208.0
+offset_right = 623.0
+offset_bottom = 776.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pq1k2")
+theme_override_font_sizes/font_size = 34
+text = "Body"
+autowrap_mode = 2
+
+[node name="FlipForward" type="Button" parent="TextureRect2/BookBack/PageRight"]
+layout_mode = 0
+offset_left = 615.0
+offset_top = 808.0
+offset_right = 660.0
+offset_bottom = 839.0
+text = "Next"
+
+[connection signal="pressed" from="TextureRect2/Return" to="." method="_on_return_pressed"]
+[connection signal="pressed" from="TextureRect2/BookBack/PageLeft/FlipBack" to="." method="_on_flip_back_pressed"]
+[connection signal="pressed" from="TextureRect2/BookBack/PageRight/FlipForward" to="." method="_on_flip_forward_pressed"]
