@@ -20,9 +20,10 @@ func _ready():
 	
 func refresh_scene():
 	if QuizProg.index_item >= QuizProg.questionList.size():
+		get_tree().change_scene_to_file("res://quiz.tscn")
 		#switch back to quiz, then show result
-		pass
 	else:
+		print("question:", QuizProg.index_item)
 		show_question()
 
 func show_question():

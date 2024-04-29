@@ -31,6 +31,7 @@ func refresh_scene():
 	if QuizProg.index_item >= 20:
 		show_result()
 	else:
+		print("question:", QuizProg.index_item)
 		show_question()
 
 func show_question():
@@ -38,7 +39,7 @@ func show_question():
 	RestartButton.hide()
 	ListItem.clear()
 	item = QuizProg.questionList[QuizProg.index_item]
-	print(item["type"])
+	#print(item["type"])
 	if item["type"] == 1:
 		DisplayText.text = item.question
 		var options = item.answers
